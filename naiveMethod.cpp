@@ -7,14 +7,14 @@ bool twoSum(vector<int> &arr, int target) {
 
     // Consider all pairs (arr[i], arr[j])
     for (int i = 0; i < n; i++) {
-        // for (int j = i + 1; j < n; j++) {
+        for (int j = i + 1; j < n; j++) {
           
-        //     // Check if the sum of the current pair
-        //     // equals the target
-        //     if (arr[i] + arr[j] == target) {
-        //         return true;
-        //     }
-        // }
+            // Check if the sum of the current pair
+            // equals the target
+            if (arr[i] + arr[j] == target) {
+                return true;
+            }
+        }
     }
   
     // If no pair is found after checking all 
